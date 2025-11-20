@@ -1,9 +1,23 @@
 "use client"
 
 import Button from "@/components/Button";
+import CardAnimal from "@/components/CardAnimal";
+import CardCategory from "@/components/CardCategory";
+import ProductPage from "@/components/ProductPage";
 import Image from "next/image";
 
 export default function Home() {
 
-  return <Button text="Ir Para Categoria" onClick={()=>(console.log ("hello"))}/>
+  return (
+  <>
+  <div>
+
+  <CardAnimal/>
+ <ProductPage/>
+  <CardCategory/>
+</div>
+<div>
+
+</div>
+</>)
 }
