@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Button from "./Button";
+import { OrangeButton } from "./Button";
 
 export default function CardCategory(props: {
   title: string;
@@ -14,7 +14,7 @@ export default function CardCategory(props: {
           {props.title}
         </div>
         <div className="text-gray-700 text-[.8rem]">{props.description}</div>
-        <Button text="Ir Para Categoria" onClick={props.onClick} />
+        <OrangeButton text="Ir Para Categoria" onClick={props.onClick} />
       </div>
     </div>
   );

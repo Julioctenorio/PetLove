@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Button from "./Button";
+import { OrangeButton } from "./Button";
 import IProduct from "@/app/types/products";
 import { useRouter } from "next/navigation";
 
@@ -16,7 +16,7 @@ export default function ProductCard(props: { Product: IProduct }) {
         <div className="text-gray-700 text-sm mt-1">
           {props.Product.description}
         </div>
-        <Button
+        <OrangeButton
           text="Ver Detalhes"
           onClick={() => navigate.push(props.Product._id)}
         />

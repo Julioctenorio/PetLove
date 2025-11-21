@@ -1,5 +1,4 @@
 import { Card } from "react-bootstrap"
-import dogImage from "../images/dog.png"
 
 export default function CardAnimal() {
 
