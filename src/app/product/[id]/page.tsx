@@ -1,11 +1,10 @@
 "use client";
 
-import Navbar from "@/components/Navbar";
 import IProduct from "../../types/products";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
+import Footer from "@/components/Footer";
 
 export default function Product() {
   const [products, setProducts] = useState<IProduct>();
@@ -42,6 +41,7 @@ export default function Product() {
       <div>
       {products?.description}
       </div>
+      <Footer />
     </>
   );
 }

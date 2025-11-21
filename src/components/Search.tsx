@@ -1,14 +1,11 @@
 import { type ChangeEvent } from "react";
 
-interface SearchProps{
-  value: string,
+interface SearchProps {
+  value: string;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
-
-
 export default function Search(props: SearchProps) {
-
   return (
     <>
       <div className="text-black pl-5 cursor-pointer">
@@ -19,7 +16,7 @@ export default function Search(props: SearchProps) {
           type="text"
           placeholder="Procurar Produto"
           className="text-black pl-7 border-none outline-none focus:outline-none"
-          value={ props.value }
+          value={props.value}
           onChange={props.onChange}
         />
       </div>
